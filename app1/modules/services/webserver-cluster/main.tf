@@ -103,7 +103,7 @@ resource "aws_key_pair" "tf_deployer" {
 
 
 
-data "aws_ec2_spot_price" "ec2_spot_price" {
+data "aws_ec2_spot_price" "instance_price" {
   instance_type     = var.instance_type
   availability_zone = "${var.region}a"
   filter {

@@ -34,7 +34,7 @@ resource "aws_launch_configuration" "as_webconf_v1" {
   lifecycle {
     create_before_destroy = true
   }
-  spot_price    = data.aws_ec2_spot_price.example.spot_price
+  spot_price    = data.aws_ec2_spot_price.instance_price.spot_price
 }
 
 output "name" {
