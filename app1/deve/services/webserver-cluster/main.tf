@@ -22,5 +22,8 @@ module "webserver_cluster" {
   public_cidr             = "0.0.0.0/0"
   tags                    = {"owner": "terraform", "env": "deve"}
   region = "us-east-2" 
+  max_size                = 1
+  min_size                = 1
+  
 }
 

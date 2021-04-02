@@ -26,3 +26,10 @@ variable "cluster_name" {
 variable "region" {
   type = string
 }
+
+variable "max_size" {
+  type = number
+}
+variable "min_size" {
+  type = number
+}
