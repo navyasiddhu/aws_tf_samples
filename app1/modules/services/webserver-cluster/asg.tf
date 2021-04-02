@@ -44,7 +44,7 @@ output "name" {
 resource "aws_autoscaling_group" "webservers" {
   #tags = var.tags 
   max_size = var.max_size
-  min_size = var.min.size
+  min_size = var.min_size
   vpc_zone_identifier = data.aws_subnet_ids.selectedvpc_subnets.ids
   launch_configuration = aws_launch_configuration.as_webconf_v1.id  
   # target_group_arns = [ aws_lb_target_group.webASG.arn ]
